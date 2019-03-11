@@ -1,0 +1,57 @@
+button, input {
+    outline: none;
+}
+
+.pagination {
+    float: right;
+    display: inline-block;
+    padding-left: 0;
+    margin: 5px 10px 10px!important;
+    border-radius: 0;
+    font-size: 12px;
+}
+.pagination > li {
+    display: inline-block;
+}
+.pagination > li > span{
+    float: left;
+    padding: 5px;
+    color: #428bca;
+}
+.pagination > li > a, .pagination > li > input, .pagination > li > button{
+    position: relative;
+    cursor: pointer;
+    float: left;
+    padding: 5px 10px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #428bca;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+}
+.pagination > li > input.input-page {
+    width: 40px;
+    padding: 5px 10px;
+    cursor: text;
+}
+.pagination > li > button.btn-page {
+    padding: 5px 10px;
+}
+.pagination > li > button:first-child {
+    margin-left: 5px;
+}
+.pagination > li > a:hover, .pagination > li.active a, .jumpToPage:hover {
+    color: #fff;
+    background-color: #014B70;
+    border-color: #428bca;
+}
+.pagination > li > a.cur-def {
+    cursor: default;
+}
+.no-allowed a:hover {
+    cursor: not-allowed;
+}
+.no-pointer {
+    cursor: default!important;
+}
